@@ -37,7 +37,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.urtasun.Mai</mainClass>
+                            <mainClass>com.urtasun.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
