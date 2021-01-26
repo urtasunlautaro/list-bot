@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target/ListBot-1.0.0.jar
+web: java $JAVA_OPTS -jar -Dserver.port=$PORT target/ListBot-1.0.0.jar
