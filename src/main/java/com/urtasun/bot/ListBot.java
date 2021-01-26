@@ -19,7 +19,7 @@ public class ListBot extends TelegramLongPollingBot {
   }
 
   public void onUpdateReceived(Update update) {
-    this.sendMessage(this.handler.handle(update));
+    this.sendMessage(this.handler.handleUpdate(update));
   }
 
   private void sendMessage(SendMessage sendMessage) {
