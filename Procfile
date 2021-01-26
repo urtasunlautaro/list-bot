@@ -1,1 +1,0 @@
-web: java $JAVA_OPTS -jar -Dserver.port=$PORT target/ListBot-1.0.0.jar
