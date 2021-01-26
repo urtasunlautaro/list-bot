@@ -34,19 +34,24 @@ public class Handler {
   private String addItem(Update update) {
     String item = this.retrieveItem(update);
     if (list.contains(item)) {
+      log.debug("El ítem {} ya estaba en la lista", item);
       return "El ítem ya estaba en la lista";
     } else {
       list.add(item);
+      log.debug("Se agregó '{}' a la lista", item);
       return "Se agregó '" + item + "' a la lista";
     }
   }
 
   private String removeItem(Update update) {
     String item = this.retrieveItem(update);
+
     if (list.contains(item)) {
       list.remove(item);
+      log.debug("Se eliminó '{}' de la lista", item);
       return "Se eliminó '" + item + "' de la lista";
     } else {
+      log.debug("El ítem '{}' no existe en la lista", item);
       return "El ítem '" + item + "' no existe en la lista";
     }
   }
@@ -54,6 +59,7 @@ public class Handler {
   private String returnList() {
     StringBuilder itemList = new StringBuilder();
     list.forEach(item -> itemList.append("-").append(item).append("\n"));
+    log.debug("Devolviendo lista");
     return itemList.toString();
   }
 
