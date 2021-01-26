@@ -25,7 +25,7 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
-                    <finalName>jar-with-dependencies</finalName>
+                    <finalName>ListBot-1.0.0.jar</finalName>
                 </configuration>
             </plugin>
             <plugin>
