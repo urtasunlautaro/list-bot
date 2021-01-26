@@ -2,6 +2,8 @@ package com.urtasun.handler;
 
 import com.urtasun.enums.Command;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
@@ -9,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
+@Service
 public class Handler {
 
   private List<String> list = new ArrayList<>();

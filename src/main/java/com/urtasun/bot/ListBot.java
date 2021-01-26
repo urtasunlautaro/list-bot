@@ -1,14 +1,18 @@
 package com.urtasun.bot;
 
 import com.urtasun.handler.Handler;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+@Component
+@RequiredArgsConstructor
 public class ListBot extends TelegramLongPollingBot {
 
-  private final Handler handler = new Handler();
+  private final Handler handler;
 
   public String getBotUsername() {
     return "personal_list_bot";
