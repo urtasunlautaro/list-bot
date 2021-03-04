@@ -1,3 +1,3 @@
 Bot de Telegram generador de listas de elementos agregados por el usuario.
 
-Usuario: /personal_list_bot
+Las propiedades mapeadas en los @Value en ListBot.java pueden ser mapeadas con un archivo .properties a necesidad.
