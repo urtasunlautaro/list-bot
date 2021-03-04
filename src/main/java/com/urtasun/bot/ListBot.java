@@ -20,11 +20,11 @@ public class ListBot extends TelegramLongPollingBot {
   private final Handler handler;
 
   public String getBotUsername() {
-    return "personal_list_bot";
+    return username;
   }
 
   public String getBotToken() {
-    return "1551953970:AAGQfrmIr-ylLVAQW3GhpedW8lEdzHVjitk";
+    return token;
   }
 
   public void onUpdateReceived(Update update) {
